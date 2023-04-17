@@ -27,10 +27,6 @@ You have until 0900 on Tuesday, 2021-03-16 to complete the assignment.
 
 This is an open book test. You are welcome to use class notes, books, or any resource on the internet.
 
-### Starter Code
-
-You may start your app from scratch, or you may use the [express app starter code found here](https://github.com/WDI-SEA/p2-retake-starter-code/tree/master)
-
 ### Technology Requirements
 
 In class, we've been using PostgreSQL, Sequelize, Node, Express, and EJS, so by default, we'll assume that's what you're using for this assessment. However, you are welcome to use any framework, ORM, view engine, and cloud service you're comfortable with.
