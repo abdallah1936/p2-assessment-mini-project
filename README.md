@@ -46,9 +46,9 @@ Make an Express app with the following routes:
 | METHOD | PATH           | PURPOSE                        |
 | ------ | -------------- | ------------------------------ |
 | GET    | /              | Home Page                      |
-| GET    | /favorites     | List of all favorite animals   |
-| POST   | /favorites     | Add a new favorite animal      |
-| GET    | /favorites/new | A form for adding a new animal |
+| GET    | /animals     | List of all favorite animals   |
+| POST   | /animals     | Add a new favorite animal      |
+| GET    | /animals/new | A form for adding a new animal |
 
 #### Database
 
