@@ -42,9 +42,12 @@ Make an Express app with the following routes:
 | METHOD | PATH           | PURPOSE                        |
 | ------ | -------------- | ------------------------------ |
 | GET    | /              | Home Page                      |
-| GET    | /animals     | List of all favorite animals   |
-| POST   | /animals     | Add a new favorite animal      |
-| GET    | /animals/new | A form for adding a new animal |
+| GET    | /animals       | List of all favorite animals   |
+| POST   | /animals       | Add a new favorite animal      |
+| GET    | /animals/new   | A form for adding a new animal |
+| GET    | /animals/:id   | a details page for a specific animal |
+| PUT    | /animals/:id   | updates a specific animal |
+| DELETE    | /animals/:id   | destroys a specific animal |
 
 #### Database
 
