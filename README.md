@@ -43,6 +43,7 @@ Make an Express app with the following routes:
 | GET    | /animals/new   | A form for adding a new animal |
 | GET    | /animals/:id   | a details page for a specific animal |
 | PUT    | /animals/:id   | updates a specific animal |
+| GET    | /animals/edit   | A form for adding a editing animal |
 | DELETE    | /animals/:id   | destroys a specific animal |
 
 #### Database
