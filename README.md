@@ -19,10 +19,6 @@ The goal of this project assessment is to gauge your ability to develop a minima
 
 ## Requirements
 
-### Time Limit
-
-You have until 0900 on Tuesday, 2021-03-16 to complete the assignment.
-
 ### Resources
 
 This is an open book test. You are welcome to use class notes, books, or any resource on the internet.
