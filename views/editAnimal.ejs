@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit <%= animal.species_name %></title>
+</head>
+<body>
+  <h1>Edit <%= animal.species_name %></h1>
+  <form action="/animals/<%= animal.id %>?_method=PUT" method="post">
+    <label for="species_name">Species Name:</label>
+    <input type="text" name="species_name" id="species_name" value="<%= animal.species_name %>" required>
+    <br>
+    <label for="scientific_name">Scientific Name:</label>
+    <input type="text" name="scientific_name" id="scientific_name" value="<%= animal.scientific_name %>" required>
+    <br>
+    <label for="image_url">Image URL:</label>
+    <input type="text" name="image_url" id="image_url" value="<%= animal.image_url %>" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required><%= animal.description %></textarea>
+    <br>
+    <label for="extinct">Extinct:</label>
+    <input type="checkbox" name="extinct" id="extinct" <%= animal.extinct ? 'checked' : '' %>>
+    <br>
+    <button type="submit">Update Animal</button>
+  </form>
+  <a href="/animals/<%= animal.id %>">Back to Animal Details</a>
+</body>
+</html>

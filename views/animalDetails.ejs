@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= animal.species_name %> Details</title>
+<style>
+  .extinct {
+    color: red;
+  }
+  .image {
+    max-width: 300px;
+    max-height: 300px;
+  }
+</style>
+</head>
+<body>
+<h1><%= animal.species_name %> Details</h1>
+<span class="<%= animal.extinct ? 'extinct' : '' %>"><%= animal.species_name %></span> - <i><%= animal.scientific_name %></i>
+<br>
+<img src="<%= animal.image_url %>" alt="<%= animal.species_name %>" class="image">
+<br>
+<%= animal.description %>
+<br>
+<a href="/animals">Back to List</a>
+<a href="/animals/<%= animal.id %>/edit">Edit Animal</a>
+<form action="/animals/<%= animal.id %>?_method=DELETE" method="post" style="display:inline;">
+  <button type="submit">Delete Animal</button>
+</form>
+</body>
+</html>

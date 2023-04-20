@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Favorite Animal</title>
+</head>
+<body>
+  <h1>Add a New Favorite Animal</h1>
+  <form action="/animals" method="post">
+    <label for="species_name">Species Name:</label>
+    <input type="text" name="species_name" id="species_name" required>
+    <br>
+    <label for="scientific_name">Scientific Name:</label>
+    <input type="text" name="scientific_name" id="scientific_name" required>
+    <br>
+    <label for="image_url">Image URL:</label>
+    <input type="text" name="image_url" id="image_url" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required></textarea>
+    <br>
+    <label for="extinct">Extinct:</label>
+    <input type="checkbox" name="extinct" id="extinct">
+    <br>
+    <button type="submit">Add Animal</button>
+  </form>
+  <a href="/">Home</a>
+</body>
+</html>
