@@ -4,27 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add a New Favorite Animal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+KnujslPRfwnzGYZBbO4NEt+0W2QFfJ/MDGN2e7t4KzIIXz" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    h1 {
+      font-weight: 600;
+    }
+    .image {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Add a New Favorite Animal</h1>
-  <form action="/animals" method="post">
-    <label for="species_name">Species Name:</label>
-    <input type="text" name="species_name" id="species_name" required>
-    <br>
-    <label for="scientific_name">Scientific Name:</label>
-    <input type="text" name="scientific_name" id="scientific_name" required>
-    <br>
-    <label for="image_url">Image URL:</label>
-    <input type="text" name="image_url" id="image_url" required>
-    <br>
-    <label for="description">Description:</label>
-    <textarea name="description" id="description" required></textarea>
-    <br>
-    <label for="extinct">Extinct:</label>
-    <input type="checkbox" name="extinct" id="extinct">
-    <br>
-    <button type="submit">Add Animal</button>
-  </form>
-  <a href="/">Home</a>
-</body>
-</html>
+  <div class="container">
+    <h1 class="my-4">Add a New Favorite Animal</h1>
+    <form action="/animals" method="post">
+      <div class="mb-3">
+        <label for="species_name" class="form-label">Species Name:</label>
+        <input type="text" name="species_name" id="species_name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="scientific_name" class="form-label">Scientific Name:</label>
+        <input type="text" name="scientific_name" id="scientific_name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="img_url" class="form-label">Image URL:</label>
+        <input type="text" name="img_url" id="img_url" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description:</label>
+        <textarea name="description" id="description" class="form-control" required></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" name="extinct" id="extinct" class="form-check-input">
+        <label for="extinct" class="form-check-label">Extinct:</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Animal</button>
+    </form>
+    <a href="/" class="btn btn-secondary mt-3">Home</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntX" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@
